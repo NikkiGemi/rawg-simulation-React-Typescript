@@ -12,7 +12,7 @@ const GameCard = ({ game }: GameCardProps) => {
   return (
     <Card>
       <Image src={getCroppedImage(game.background_image)}></Image>
-      <CardBody>
+      <CardBody minHeight={"120px"}>
         <Heading fontSize="2xl">{game.name}</Heading>
         <HStack justifyContent={"space-between"}>
           <PlatFormIconList
